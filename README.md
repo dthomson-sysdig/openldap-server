@@ -42,3 +42,8 @@ docker-compose up -d
 # Version
 
 1.0 - Initial
+
+# References
+
+* [phpLDAPAdmin](https://github.com/osixia/docker-phpLDAPadmin)
+* [osixia/docker-openldap](https://github.com/osixia/docker-openldap)
