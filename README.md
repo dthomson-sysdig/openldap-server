@@ -17,7 +17,21 @@ docker-compose up -d
 # OOTB Configuration
 
 *baseDN:* dc=riverdaze,dc=internal
+
 *adminUser:* cn=admin,dc=riverdaze,dc=internal (default password:  admin)
+
+### Users
+
+* user1 / user1_pass
+* user2 / user2_pass
+* user3 / user3_pass
+
+### Groups
+
+* Admins
+* Mixed
+* Sysdig Editors
+* Sysdig Viewers
 
 ![example](images/riverdaze-ldap-example.png)
 
