@@ -22,6 +22,7 @@ docker-compose up -d
 
 ### Users
 
+* admin / admin
 * user1 / user1_pass
 * user2 / user2_pass
 * user3 / user3_pass
