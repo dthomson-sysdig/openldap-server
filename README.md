@@ -10,9 +10,14 @@ docker build -t my_ldap_image .
 
 # Run Locally
 
+This will start the image along with phpLDAPAdmin as well on your local machine so you can login and make changes.
+
 ```bash
 docker-compose up -d
 ```
+
+### phpLDAPAdmin
+[http://127.0.0.1:8090/](http://127.0.0.1:8090/)
 
 # OOTB Configuration
 
