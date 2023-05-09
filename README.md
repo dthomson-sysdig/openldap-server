@@ -18,8 +18,6 @@ docker-compose up -d
 
 *baseDN:* dc=riverdaze,dc=internal
 
-*adminUser:* cn=admin,dc=riverdaze,dc=internal (default password:  admin)
-
 ### Users
 
 * admin / admin
