@@ -1,0 +1,67 @@
+dn: cn=user1,dc=riverdaze,dc=internal
+changetype: add
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+cn: user1
+givenname: user1
+sn: user1
+displayname: User 1
+userpassword: user1_pass
+
+dn: cn=user2,dc=riverdaze,dc=internal
+changetype: add
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+cn: user2
+givenname: user2
+sn: user2
+displayname: User 2
+userpassword: user2_pass
+
+dn: cn=user3,dc=riverdaze,dc=internal
+changetype: add
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+cn: user3
+givenname: user3
+sn: user3
+displayname: User 3
+userpassword: user3_pass
+
+dn: ou=Groups,dc=riverdaze,dc=internal
+changetype: add
+objectclass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,dc=riverdaze,dc=internal
+changetype: add
+objectclass: organizationalUnit
+ou: Users
+
+dn: cn=Admins,ou=Groups,dc=riverdaze,dc=internal
+changetype: add
+cn: Admins
+objectclass: groupOfUniqueNames
+uniqueMember: cn=user1,dc=riverdaze,dc=internal
+
+dn: cn=Sysdig Viewers,ou=Groups,dc=riverdaze,dc=internal
+changetype: add
+cn: Sysdig Viewers
+objectclass: groupOfUniqueNames
+uniqueMember: cn=user3,dc=riverdaze,dc=internal
+uniqueMember: cn=user2,dc=riverdaze,dc=internal
+
+dn: cn=Sysdig Editors,ou=Groups,dc=riverdaze,dc=internal
+changetype: add
+cn: Sysdig Editors
+objectclass: groupOfUniqueNames
+uniqueMember: cn=user1,dc=riverdaze,dc=internal
+uniqueMember: cn=user2,dc=riverdaze,dc=internal
+
+dn: cn=Mixed,ou=Groups,dc=riverdaze,dc=internal
+changetype: add
+cn: Mixed
+objectclass: groupOfUniqueNames
+uniqueMember: cn=user1,dc=riverdaze,dc=internal
+uniqueMember: cn=user2,dc=riverdaze,dc=internal
+uniqueMember: cn=user3,dc=riverdaze,dc=internal
